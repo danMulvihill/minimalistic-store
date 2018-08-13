@@ -70,18 +70,15 @@ ul{
     background: #001e4c;
     color:white;
     opacity: .8;
+    display: flex;
+    justify-content: space-between;
 }
-/* .index .top-nav{
-    display:none;
-} */
 
-/* .top-nav p a{
-    color: white;
-    float: right;
-    padding-right: 15px;
-} */
+.top-nav .right-content{
+    align-self: flex-end;
+}
 
-/* .index */ .top-nav ul{
+.top-nav ul{
     display:none;
 }
 
@@ -142,29 +139,47 @@ header{
     
     color: white;
     padding: 0;
-    height: 80vh;
+    height: 70vh;
 }
 
-header h1{
+header h1, .top-nav h1{
     color: #d6013b;
-    margin: 20px;
+    margin-left: 20px;
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 2px 2px #ffc801;;
+    text-shadow: 2px 2px #ffc801;
+}
+
+.top-nav h1{
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-left: 35px;
+}
+/* Had to make a span so the display:none wouldn't conflict with display:flex */
+.top-nav h1 span{
+    display:none
 }
 
 header h4{
     display:none;
-    color: #ffc801;
+    color: #d6013b;
+    text-shadow: 1px 1px #ffc801;
 }
 
 header .header-text{
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 15px;
     padding-right: 40px;
     color: #ffc801;
+    text-shadow: 2px 2px #d6013b;
     position:absolute;
-    bottom: 90px;
+    bottom: 160px;
+}
+header .header-text p{
+    margin-bottom: 10px;
+   
 }
 
 .divided-header h1{
