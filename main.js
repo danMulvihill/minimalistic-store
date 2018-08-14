@@ -77,7 +77,7 @@ $.ajax({
 
     $(window).on("scroll", function(){
       $(".top-nav h1 span").fadeIn();
-      $("header h1").hide();
+      $("header h1").fadeOut();
     })
 
 
